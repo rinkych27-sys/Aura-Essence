@@ -1,0 +1,68 @@
+/* ================================================
+   Aura Essence Perfumes - Premium Bold Retro Theme
+   Colors: Wine (#5A0B2E), Gold (#E3B34A), Dark Brown (#2A1A1F)
+   ================================================ */
+
+/* Global */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background: #2A1A1F; color: #E3B34A; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+
+/* Header */
+.header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #2A1A1F; box-shadow: 0 4px 15px rgba(0,0,0,0.7); position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 28px; font-weight: 800; color: #E3B34A; letter-spacing: 2px; }
+.navbar a { margin-left: 25px; font-weight: 500; transition: 0.3s; }
+.navbar a:hover, .navbar .active { color: #FFD966; }
+
+/* Hero Section */
+.hero { height: 80vh; display: flex; justify-content: center; align-items: center; text-align: center; background-size: cover; background-position: center; position: relative; }
+.hero-overlay { background: rgba(90,11,46,0.7); padding: 50px; border-radius: 12px; }
+.hero-title { font-size: 60px; font-weight: 800; margin-bottom: 15px; color: #FFD966; text-shadow: 0 3px 12px rgba(0,0,0,0.7); }
+.hero-sub { font-size: 22px; color: #FFD966; margin-bottom: 30px; }
+.btn-gold, .btn-outline { padding: 12px 28px; border-radius: 6px; font-weight: 600; margin: 10px; transition: 0.3s; }
+.btn-gold { background: #E3B34A; color: #2A1A1F; border: none; }
+.btn-gold:hover { background: #FFD966; }
+.btn-outline { border: 2px solid #E3B34A; color: #E3B34A; background: transparent; }
+.btn-outline:hover { background: #E3B34A; color: #2A1A1F; }
+
+/* Section Titles */
+.section-title { text-align: center; font-size: 32px; margin-bottom: 40px; }
+
+/* Features / Product Grid */
+.features-grid, .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; width: 90%; margin: auto; }
+.feature-card, .product-card { background: #5A0B2E; padding: 20px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.7); text-align: center; transition: transform 0.3s, box-shadow 0.3s; position: relative; }
+.feature-card:hover, .product-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.9); }
+.feature-card p, .product-card p { color: #FFD966; }
+.product-card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+.product-card h3 { font-size: 22px; color: #FFD966; }
+.product-card .btn { margin: 5px; padding: 10px 18px; border-radius: 6px; font-weight: 600; cursor: pointer; }
+.product-card .add-cart { background: #E3B34A; color: #2A1A1F; border: none; }
+.product-card .add-cart:hover { background: #FFD966; }
+.product-card .book-now { background: transparent; border: 2px solid #E3B34A; color: #E3B34A; }
+.product-card .book-now:hover { background: #E3B34A; color: #2A1A1F; }
+.ribbon { position: absolute; top: 10px; left: -5px; background: #FFD966; color: #2A1A1F; padding: 5px 10px; font-size: 12px; font-weight: 700; transform: rotate(-15deg); box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
+
+/* Checkout */
+.checkout-container { display: flex; flex-wrap: wrap; justify-content: space-between; width: 90%; margin: auto; gap: 30px; }
+form { flex: 1; min-width: 300px; background: #2A1A1F; padding: 30px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.7); }
+form label { font-weight: 600; margin-bottom: 5px; display: block; color: #FFD966; }
+form input, form textarea, form select { width: 100%; padding: 12px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #FFD966; background: #5A0B2E; color: #FFD966; }
+form button { width: 100%; padding: 12px; background: #E3B34A; color: #2A1A1F; font-size: 18px; border-radius: 8px; cursor: pointer; font-weight: 700; }
+form button:hover { background: #FFD966; }
+.order-summary { flex: 1; min-width: 250px; background: #5A0B2E; padding: 20px; border-radius: 12px; color: #FFD966; box-shadow: 0 6px 18px rgba(0,0,0,0.7); }
+
+/* Thank You Page */
+.thankyou-box { text-align: center; padding: 60px; background: #5A0B2E; margin: 40px auto; width: 70%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.7); }
+.thankyou-box h1 { font-size: 50px; color: #FFD966; margin-bottom: 15px; }
+.thankyou-box p { font-size: 22px; margin: 15px 0; }
+.glow-text { text-shadow: 0 0 10px #FFD966, 0 0 20px #FFD966, 0 0 30px #FFD966; }
+.btn-back { margin-top: 20px; display: inline-block; padding: 12px 25px; background: #E3B34A; color: #2A1A1F; border-radius: 8px; text-decoration: none; font-weight: 600; }
+.btn-back:hover { background: #FFD966; }
+
+/* Footer */
+.footer { text-align: center; padding: 20px; margin-top: 50px; background: #2A1A1F; color: #FFD966; box-shadow: 0 -4px 10px rgba(0,0,0,0.7); }
+
+/* Responsive */
+@media(max-width:768px){
+  .checkout-container{ flex-direction: column; }
+}
