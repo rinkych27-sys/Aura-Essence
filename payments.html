@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Essence Perfumes • Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header dark-brown-bg">
+        <div class="logo gold-text">AURA ESSENCE</div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Perfumes</a>
+            <a href="payments.html" class="active">Payments</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-checkout premium-hero">
+        <h1 class="hero-title gold-text">Secure Your Perfume</h1>
+        <p class="hero-sub">Complete your order and enjoy the aroma of luxury</p>
+    </section>
+
+    <!-- CHECKOUT SECTION -->
+    <section class="checkout-section dark-brown-bg retro-shadow">
+        <h2 class="section-title gold-text">Payment Details</h2>
+        <div class="checkout-container">
+            <!-- FORM -->
+            <form id="checkoutForm" onsubmit="submitPayment(event)">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <label for="paymentMethod">Payment Method</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="upi">UPI</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+
+                <button type="submit" class="btn-submit">Confirm Order</button>
+            </form>
+
+            <!-- ORDER SUMMARY -->
+            <div class="order-summary" id="orderSummary">
+                <!-- JS will dynamically load cart items here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer dark-brown-bg gold-text">
+        <p>© 2025 Aura Essence Perfumes. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
